@@ -28,7 +28,7 @@ pipeline{
             steps{
                 echo "run a container"
                
-                bash 'docker-compose up'
+                sh('docker-compose up')
             }
             
         }
@@ -39,7 +39,7 @@ pipeline{
             //    echo 'Waiting 30 sec for container deployment '
             //    sleep 30 // seconds
                 echo "e2e test"
-                bash 'docker exec worldofgames_world_of_games_1 bash -c \"python e2e.py\"'
+                sh( 'docker exec worldofgames_world_of_games_1 bash -c \"python e2e.py\"')
             }
 
         }
@@ -49,7 +49,7 @@ pipeline{
             steps{
                 echo "drop the container"
                 
-                bat "docker stop worldofgames_world_of_games_1"
+                sh( "docker stop worldofgames_world_of_games_1")
             }
             
             
