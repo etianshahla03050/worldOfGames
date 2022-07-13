@@ -18,7 +18,7 @@ pipeline{
         stage("build a container"){
             steps{
                 echo "build a container"
-                bat "docker-compose build"
+                bash "docker-compose build"
 
             }
         }
@@ -28,7 +28,7 @@ pipeline{
             steps{
                 echo "run a container"
                
-                bat 'docker-compose up'
+                bash 'docker-compose up'
             }
             
         }
@@ -39,7 +39,7 @@ pipeline{
             //    echo 'Waiting 30 sec for container deployment '
             //    sleep 30 // seconds
                 echo "e2e test"
-                bat 'docker exec worldofgames_world_of_games_1 bash -c \"python e2e.py\"'
+                bash 'docker exec worldofgames_world_of_games_1 bash -c \"python e2e.py\"'
             }
 
         }
