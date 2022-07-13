@@ -5,4 +5,3 @@ COPY MainScores.py ./
 COPY Scores.txt ./
 EXPOSE 8777
 RUN pip install Flask
-CMD ["python" , "MainScores.py"]
