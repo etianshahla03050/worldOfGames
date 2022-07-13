@@ -10,7 +10,7 @@ pipeline{
         stage("checkout a repo"){
             steps{
                 echo "checkout a repo"
-                git 'https://github.com/etianshahla0305/worldOfGames'
+                git 'https://github.com/etianshahla03050/worldOfGames'
            }
         }
        
