@@ -28,7 +28,7 @@ pipeline{
             steps{
                 echo "run a container"
                
-                bat 'docker-compose up --detach'
+                bat 'docker-compose up'
             }
             
         }
