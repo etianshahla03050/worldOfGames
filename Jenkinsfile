@@ -39,7 +39,7 @@ pipeline{
             //    echo 'Waiting 30 sec for container deployment '
             //    sleep 30 // seconds
                 echo "e2e test"
-                sh("docker run -d -p 4444:4444 selenium/standalone-chrome")
+                sh("pip3 install -r requirements.txt")
                 sh( "python e2e.py")
             }
 
