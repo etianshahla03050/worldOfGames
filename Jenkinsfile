@@ -39,7 +39,7 @@ pipeline{
             //    echo 'Waiting 30 sec for container deployment '
             //    sleep 30 // seconds
                 echo "e2e test"
-                sh( 'docker exec worldofgames_world_of_games_1 bash -c \"python e2e.py\"')
+                sh( 'docker exec workspace2_world_of_games_1 bash -c \"python e2e.py\"')
             }
 
         }
