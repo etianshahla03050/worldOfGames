@@ -1,4 +1,3 @@
-# import webdriver from selenium package
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
