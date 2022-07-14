@@ -32,3 +32,4 @@ ADD . .
 
 WORKDIR .
 
+CMD ["python", "MainScores.py"]
